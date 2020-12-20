@@ -13,4 +13,35 @@
             </div>
         </form>
     </div>
+    <hr>
+    
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Amount</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">ROI</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Compounded Amount</th>
+            <th scope="col">Due Date</th>
+          </tr>
+        </thead>
+        {% if loans is not none %}
+            {% for loan in loans %}
+                <tbody>
+                <tr>
+                    <td>{{ loan.amount }}</td>
+                    <td>{{ loan.date_applied | date:'F d, Y' }}</td>
+                    <td>{{ loan.rate_of_interest }}</td>
+                    <td>{{ loan.duration }}</td>
+                    <td>{{ loan.compound_interest }}</td>
+                    <td>{{ loan.due_date }}</td>
+                </tr>
+                </tbody>
+            {% endfor %}
+        {% else %}
+                <p>No Loans Applied Yet</p>
+        {% endif %}
+    </table>
+    
 {% endblock content %}
