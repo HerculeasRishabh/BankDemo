@@ -4,11 +4,9 @@ Hello Reader,
 
 Thanks for your time in reviewing this code.
 
-Kindly clone this repository in your local and start using this django application.
+I have made use of django class based views, django forms, django login/logout, and django models in developing this application.
 
-
-Please Note:
-I am yet to complete this application as per the requirements shared on email, will try to do it by 20th December 2020.
+Kindly let me know if you want me to have a walk through of this application.
 
 Thanks & Regards,
 Rishabh
